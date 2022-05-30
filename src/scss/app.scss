@@ -130,7 +130,7 @@ input {
     display: none;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     border: 1px solid var(--text-gray);
     padding: 15px;
     gap: 16px;
@@ -152,34 +152,7 @@ input {
     &__list {
         display: flex;
         flex-direction: column;
+        width: 100%;
         gap: 12px;
-    }
-
-    &__close {
-        border: 1px solid var(--text-dark);
-        border-radius: 50%;
-        width: 24px;
-        height: 24px;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        position: absolute;
-        right: 5px;
-        top: 5px;
-        cursor: pointer;
-        & span {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            width: 20px;
-            height: 2px;
-            background: var(--text-dark);
-            &:nth-child(1) {
-                transform: rotate(-45deg) translate(calc(-50% + 4px), calc(-50% - 7px));
-            }
-            &:nth-child(2) {
-                transform: rotate(45deg) translate(calc(-50% + 2px), calc(-50% + 7px));
-            }
-        }
     }
 }
