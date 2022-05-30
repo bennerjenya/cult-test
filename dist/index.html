@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовое задание</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css?v=0.0.5">
+</head>
+
+<body>
+    <!-- Страница с формой  -->
+    <div class="page active" data-page="form">
+        <form class="form">
+            <h1>Введите данные</h1>
+            <div class="inputbox">
+                <label for="name">Имя</label>
+                <input type="text" id="name" placeholder="Введите ваше имя">
+                <small>Пожалуйста, введите корректное значение</small>
+            </div>
+            <div class="inputbox">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Введите ваш email">
+                <small>Укажите email в формате test@gmail.com</small>
+            </div>
+            <div class="inputbox">
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" placeholder="Введите ваш телефон">
+                <small>Укажите телефон в формате +7(900)123-45-67</small>
+            </div>
+            <button class="buttonSubmit">Продолжить</button>
+        </form>
+    </div>
+
+    <!-- Страница с благодарностью -->
+    <div class="page" data-page="next">
+        <div class="form">
+            <h1 class="heading">Спасибо что уделили нам время, name!</h1>
+            <button class="buttonSubmit backToMain">Главная</button>
+        </div>
+    </div>
+
+    <!-- Модальное окно -->
+    <div class="modal">
+        <div class="modal__close">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="modal__top">
+            <h1>Проверьте правильность введённых данных:</h1>
+        </div>
+        <div class="modal__list"></div>
+    </div>
+
+    <script src="js/app.js?css/app.css?v=0.0.5"></script>
+
+</body>
+
+</html>
